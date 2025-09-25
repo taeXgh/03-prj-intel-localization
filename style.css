@@ -13,8 +13,9 @@ body {
 }
 
 header {
-  background-color: #127CC1;
+  background-color: #005899;
   color: white;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow for extra contrast */
   padding: 20px 0;
   text-align: center;
 }
