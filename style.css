@@ -56,7 +56,18 @@ header {
   color: #555;
   margin-bottom: 20px;
 }
+.btn.btn-primary {
+  background-color:#005899;
+}
 
+.subscription-form {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f1f1f1;
+}
 
 /* Hide the text inside the card by default */
 .card p {
