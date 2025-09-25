@@ -67,6 +67,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   background-color: #f1f1f1;
+  margin-top: 40px; /* Added space above the footer */
 }
 
 /* Hide the text inside the card by default */

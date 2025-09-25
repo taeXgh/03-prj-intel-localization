@@ -234,12 +234,40 @@
         </div>
         <!-- Subscribe button column, aligned with input -->
         <div class="col-auto" style="padding-top: 24px;">
-          <!-- Reduced top padding for better alignment -->
-          <button type="button" class="btn btn-primary">Subscribe</button>
+          <!-- 
+            When the Subscribe button is clicked, it will open the modal below.
+            data-bs-toggle and data-bs-target are Bootstrap attributes for modals.
+          -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Subscribe
+          </button>
         </div>
       </div>
     </form>
   </section>
+
+  <!-- Bootstrap Modal for subscription confirmation -->
+  <!-- This modal appears when the Subscribe button is clicked -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- Modal title -->
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Subscription Complete!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Modal message -->
+          Thank you for subscribing. Please keep an eye on your inbox for future updates.
+        </div>
+        <div class="modal-footer">
+          <!-- Close button for the modal -->
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 Intel Corporation. All rights reserved.</p>
@@ -260,5 +288,7 @@
     }
     // Otherwise, the page stays left-to-right (default)
   </script>
+  <!-- Add Bootstrap JavaScript for modal functionality -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
